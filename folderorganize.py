@@ -106,15 +106,15 @@ def undo_organization():
 
 # GUI setup
 root = tk.Tk()
-root.title("📁 File Organizer with Undo - By Mohamed")
+root.title("📁 File Organizer with Undo ")
 root.geometry("400x250")
 root.resizable(False, False)
 
 label = tk.Label(root, text="Choose an action:", font=("Arial", 14))
 label.pack(pady=20)
 
-btn1 = tk.Button(root, text="📂 Organize Files", font=("Arial", 12), command=organize_files, width=30)
-btn1.pack(pady=10)
+btn1 = tk.Button(root, text="📂 Organize Files", font=("Arial", 12), command=organize_files, width=90)
+btn1.pack(pady=50)
 
 btn2 = tk.Button(root, text="🔄 Undo Organization", font=("Arial", 12), command=undo_organization, width=30)
 btn2.pack(pady=10)
